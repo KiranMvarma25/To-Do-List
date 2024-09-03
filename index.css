@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 750px;
+    height: 600px;
+    overflow: scroll;
+    margin-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(249, 249, 249);
+    background-color: rgb(64, 64, 214);
+    padding: 10px;
+    border-radius: 5px;
+    width: 96.5%;
+}
+
+#task-input {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+li span {
+    flex-grow: 1;
+}
+
+li button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+
+@media (width>750px) and (width<850px) {
+    .container{
+        width: 650px;
+    }
+}
+
+@media (width>700px) and (width<750px) {
+    .container{
+        width: 550px;
+    }
+}
+
+@media (width>550px) and (width<700px) {
+    .container{
+        width: 500px;
+    }
+}
+
+@media (max-width:550px) {
+    .container{
+        width: 350px;
+    }
+}
